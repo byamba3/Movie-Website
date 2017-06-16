@@ -1,6 +1,6 @@
 import media
 import fresh_tomatoes
-import urllib
+import urllib.request
 import json
 import ssl
 
@@ -73,11 +73,10 @@ predefined_movies = [logan, wonder_woman, kubo, your_name, finding_dory,
 # Returns a JSON data from a URL
 
 
-def get_json_from_url(url):
-    context = ssl._create_unverified_context()
-    response = urllib.urlopen(url, context=context)
-    data = json.load(response)
-    return data
+def get_json_from_url(link):
+    with urllib.request.urlopen(link) as url:
+        data = json.loads(url.read().decode())
+        return data
 
 # Takes in a link and the API, then returns a movie array from the JSON
 
@@ -108,6 +107,7 @@ def get_movies_from_json(link, api):
 
 
 # Main
+
 print("Movie Website - Byamba3")
 is_valid = False
 api_base_url = "https://api.themoviedb.org/3/movie/popular?api_key="
@@ -116,7 +116,7 @@ api_key = "8e0615057ed71d85a782edf61f3a1a13"
 all_movies = []
 
 while is_valid is False:
-    input_value = raw_input(
+    input_value = input(
         'Do you want to use the API version? Enter Y or N: ')
     if str.lower(input_value) == 'y' or str.lower(input_value) == 'yes':
         print("Fetching live from MovieDB...")
