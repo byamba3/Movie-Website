@@ -24,6 +24,7 @@ Source code for a Movie Trailer website. The movie Trailer website displays a li
 1. Open up IDLE
 2. Go to File -> Open and select **entertainment_center.py**
 3. Change **api_key** to your valid key
+4. Save the file
 
 ## License
 MIT License
