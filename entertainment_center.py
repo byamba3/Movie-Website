@@ -70,8 +70,6 @@ predefined_movies = [logan, wonder_woman, kubo, your_name, finding_dory,
                      zootopia, moana, ex_machina, the_martian, mad_max, gotg, inside_out]
 
 # Returns a json data from a URL
-
-
 def get_json_from_url(url):
     context = ssl._create_unverified_context()
     response = urllib.urlopen(url, context=context)
@@ -79,8 +77,6 @@ def get_json_from_url(url):
     return data
 
 # Takes in a link and the api, then returns a movie array from the json
-
-
 def get_movies_from_json(link, api):
     url = link + api
     json_movie_collection = get_json_from_url(url)
