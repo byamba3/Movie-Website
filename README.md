@@ -15,7 +15,7 @@ Source code for a Movie Trailer website. The movie Trailer website displays a li
 
 1. Open up IDLE
 2. Go to File -> Open and select **entertainment_center.py**
-3. Under the field **Pre-defined Movie objects**, add movie objects with 4 arguments: **movie_title**, **poster_image**, and **trailer_youtube**.
+3. Under the field **Pre-defined Movie objects**, add movie objects with 3 arguments: **movie_title**, **poster_image**, and **trailer_youtube**.
 4. Add the object down to the **predefined_movies** array
 5. Save the file
 
