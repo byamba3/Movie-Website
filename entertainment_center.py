@@ -67,9 +67,11 @@ inside_out = media.Movie("Inside Out",
                          "https://www.youtube.com/watch?v=YEk_5aT5Gng")
 # Add your pre-defined movies here:
 predefined_movies = [logan, wonder_woman, kubo, your_name, finding_dory,
-                     zootopia, moana, ex_machina, the_martian, mad_max, gotg, inside_out]
+                     zootopia, moana, ex_machina, the_martian, 
+                     mad_max, gotg, inside_out]
 
 # Returns a JSON data from a URL
+
 
 def get_json_from_url(url):
     context = ssl._create_unverified_context()
@@ -78,6 +80,7 @@ def get_json_from_url(url):
     return data
 
 # Takes in a link and the API, then returns a movie array from the JSON
+
 
 def get_movies_from_json(link, api):
     url = link + api
