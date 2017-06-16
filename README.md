@@ -1,23 +1,29 @@
 # ud036_StarterCode
 Source code for a Movie Trailer website. The movie Trailer website displays a list of movies. Clicking on each movies takes you to their YouTube trailer. You can either display movies from MovieDB using API, or display pre-defined movies.
 
+## Requirements
+- Python 2 or Python 3
+
 ## Usage
 
-1. Open **entertainment_center.py** in Python
-2. Within the window, press **F5** to run the program
-3. Within the output window, enter Y to use the API version, or N to use the regular version
+1. Open up IDLE
+2. Go to File -> Open and select **entertainment_center.py**
+3. Within the window, press **F5** to run the program
+4. Within the output window, enter Y to use the API version, or N to use the regular version
 
 ## Add more movies (For regular, non API option only)
 
-1. Open **entertainment_center.py** in Python
-2. Under the field **Pre-defined Movie objects**, add movie objects with 4 arguments: **movie_title**, **movie_storyline**, **poster_image**, and **trailer_youtube**. Note: **movie_storyline** isn't necessary so you can use an empty string.
-3. Add the object down to the **predefined_movies** array
-4. Save the file
+1. Open up IDLE
+2. Go to File -> Open and select **entertainment_center.py**
+3. Under the field **Pre-defined Movie objects**, add movie objects with 4 arguments: **movie_title**, **movie_storyline**, **poster_image**, and **trailer_youtube**. Note: **movie_storyline** isn't necessary so you can use an empty string.
+4. Add the object down to the **predefined_movies** array
+5. Save the file
 
 ## Change MovieDB API key
 
-1. Open **entertainment_center.py** in Python
-2. Change **api_key** to your valid key
+1. Open up IDLE
+2. Go to File -> Open and select **entertainment_center.py**
+3. Change **api_key** to your valid key
 
 ## License
 MIT License
