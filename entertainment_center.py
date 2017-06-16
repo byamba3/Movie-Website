@@ -113,11 +113,11 @@ all_movies = []
 while is_valid is False:
     input_value = raw_input(
         'Do you want to use the API version? Enter Y or N: ')
-    if str.lower(input_value) is 'y' or str.lower(input_value) is 'yes':
+    if str.lower(input_value) == 'y' or str.lower(input_value) == 'yes':
         print("Fetching live from MovieDB...")
         all_movies = get_movies_from_json(api_base_url, api_key)
         is_valid = True
-    elif str.lower(input_value) is 'n' or str.lower(input_value) is 'no':
+    elif str.lower(input_value) == 'n' or str.lower(input_value) == 'no':
         # Adds pre-defined Movie objects here!
         all_movies = predefined_movies
         is_valid = True
