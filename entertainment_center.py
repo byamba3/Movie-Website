@@ -4,7 +4,7 @@ import urllib
 import json
 import ssl
 
-# Pre-defined Movie objects for non API option
+# Pre-defined Movie objects
 
 logan = media.Movie("Logan",
                     "In the near future, a weary Logan (Hugh Jackman) cares for an ailing Professor X (Patrick Stewart) at a remote outpost on the Mexican border. His plan to hide from the outside world gets upended when he meets a young mutant (Dafne Keen) who is very much like him. Logan must now protect the girl and battle the dark forces that want to capture her.",
@@ -72,7 +72,7 @@ predefined_movies = [logan, wonder_woman, kubo, your_name, finding_dory,
 # Returns a JSON data from a URL
 def get_json_from_url(url):
     context = ssl._create_unverified_context()
-    response = urllib.urlopen(url, context=context)
+    response = urllib.urlopen(url, context = context)
     data = json.load(response)
     return data
 
