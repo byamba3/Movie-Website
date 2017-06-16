@@ -95,6 +95,8 @@ def get_movies_from_json(link, api):
         url_video = "http://api.themoviedb.org/3/movie/" + \
             str(movie['id']) + "/videos?api_key=" + api
         movie_video = get_json_from_url(url_video)
+        if not movie_video['results']:
+            continue
         trailer_url = "https://www.youtube.com/watch?v=" + \
             movie_video['results'][0]['key']
 
