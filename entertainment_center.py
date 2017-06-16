@@ -67,7 +67,7 @@ inside_out = media.Movie("Inside Out",
                          "https://www.youtube.com/watch?v=YEk_5aT5Gng")
 # Add your pre-defined movies here:
 predefined_movies = [logan, wonder_woman, kubo, your_name, finding_dory,
-                     zootopia, moana, ex_machina, the_martian, 
+                     zootopia, moana, ex_machina, the_martian,
                      mad_max, gotg, inside_out]
 
 # Returns a JSON data from a URL
