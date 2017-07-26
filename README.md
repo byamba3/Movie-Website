@@ -27,9 +27,7 @@ Source code for a Movie Trailer website. The movie Trailer website displays a li
 4. Save the file
 
 ## License
-MIT License
-
-Copyright (c) [2017] [Byambasuren Ulziisaikhan]
+Copyright (c) Byambasuren Ulziisaikhan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
