@@ -1,5 +1,6 @@
 # Movie Website Project by byamba3
-Source code for a Movie Trailer website. The movie Trailer website displays a list of movies. Clicking on each movies takes you to their YouTube trailer. You can either display movies from MovieDB using API, or display pre-defined movies.
+Source code for a Movie Trailer website. The movie Trailer website displays a list of movies. Clicking on each movies takes you to their YouTube trailer. You can either display movies from MovieDB using API, or display pre-defined movies. You can view the site here: 
+https://byamba3.github.io/Movie-Website/
 
 ## Requirements
 - Python 3
